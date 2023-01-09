@@ -18,6 +18,7 @@ module.exports = {
       },
       colors: {
         'burgandy': '#6A040F',
+        'mtk-blue': '#aed6f0',
       },
     },
   },
