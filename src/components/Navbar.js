@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/motorik-logo.png'
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose} from 'react-icons/md';
@@ -14,9 +15,9 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
 
                     <div className="flex items-center">
-                        <Link to="/">
-                            <p className='text-white'>Motorik FC</p>
-                            {/* <img src="/logo.svg" alt="Soccer Team logo" className="h-8" /> */}
+                        <Link className='flex items-center' to="/">
+                            <img src={logo} alt="logo" className="h-10 lg:h-16" />
+                            <p className='text-white px-2'>Motorik FC</p>
                         </Link>
                     </div>
 

@@ -14,12 +14,12 @@ const Home = () => {
                 Motorik
             </h1>
             <div className='flex flex-row md:flex-col justify-evenly absolute ml-2 md:ml-0 mt-4 md:mt-0 md:right-4 md:bottom-1/2'>
-              <a className='text-red-600' href='https://twitter.com/MotorikFC' target='_blank' rel="noreferrer"><FaTwitterSquare size='3rem'/></a>
-              <a href='https://www.instagram.com/motorikfcalx/' target='_blank' rel="noreferrer"><FaInstagramSquare size='3rem'/></a>
+              <a className='text-red-700 hover:text-red-500' href='https://twitter.com/MotorikFC' target='_blank' rel="noreferrer"><FaTwitterSquare size='3rem'/></a>
+              <a className='text-gray-900 hover:text-gray-700' href='https://www.instagram.com/motorikfcalx/' target='_blank' rel="noreferrer"><FaInstagramSquare size='3rem'/></a>
             </div>
         </header>
 
-        <div className='w-4/5 mx-auto md:w-full h-[30rem] my-20 sm:my-24 flex justify-center md:justify-around flex-col-reverse md:flex-row'>
+        <div className='w-4/5 mx-auto md:w-full my-16 sm:my-24 flex justify-center md:justify-around flex-col-reverse md:flex-row'>
           <div className='w-full md:w-[40%] my-8'>
             <img className="h-auto" src={team} alt='team' />
           </div>
