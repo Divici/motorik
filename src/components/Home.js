@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import player from '../assets/motorik-player.png'
+import team from '../assets/motorik-team.png'
 
 const Home = () => {
   return (
@@ -12,8 +14,18 @@ const Home = () => {
             </h1>
         </header>
 
-        <div className='h-[30rem]'>
+        <div className='w-4/5 mx-auto md:w-full h-[30rem] my-20 sm:my-24 flex justify-center md:justify-around flex-col-reverse md:flex-row'>
+          <div className='w-full md:w-[40%] my-8'>
+            <img className="h-auto" src={team} alt='team' />
+          </div>
 
+          <div className='w-full md:w-[40%]'>
+            <h3 className='capitalize text-gray-700 text-3xl sm:text-4xl ml:text-5xl lg:text-6xl font-bold'>Semi Pro soccer club based in North Virginia</h3>
+            <p className='font-semibold my-4'>Looking to join a team!</p>
+            <Link to="/tryouts" className="py-2 px-4 bg-red-700 text-white font-bold rounded-sm cursor-pointer hover:bg-gray-800">
+              Learn More
+            </Link>
+          </div>
         </div>
 
         <footer className='h-60 bg-mtk-blue'>
