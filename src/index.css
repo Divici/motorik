@@ -32,3 +32,7 @@
                 transform: translateY(0);
     }
 }
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+}

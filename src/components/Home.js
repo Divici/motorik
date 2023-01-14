@@ -1,12 +1,33 @@
 import React from 'react'
+import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import {FaTwitterSquare, FaInstagramSquare} from 'react-icons/fa'
 import player from '../assets/motorik-player.png'
 import team from '../assets/motorik-team.png'
 
 const Home = () => {
+  const games = [
+    {
+      opponent : "Bad Guys",
+      date : "01/20/2023"
+    },
+    {
+      opponent : "Other Guys",
+      date : "02/20/2023"
+    },
+    {
+      opponent : "Bad People",
+      date : "03/20/2023"
+    },
+    {
+      opponent : "Revengers",
+      date : "04/20/2023"
+    },
+  ]
+
   return (
     <div className=''>
+      <Navbar/>
         <header className=' relative h-[25rem] motorik-bg bg-no-repeat bg-cover bg-[center_top_-2rem] ml:bg-[center_top_-10rem] md:bg-[center_top_-5rem]'>
             <div className='h-24 bg-gray-800 w-4/5 sm:w-1/2 absolute bottom-20 sm:bottom-24 z-0'></div>
             <img className="h-auto sm:h-full absolute z-10 bottom-0 sm:left-1/4" src={player} alt='player' />
@@ -33,8 +54,31 @@ const Home = () => {
           </div>
         </div>
 
-        <footer className='h-60 bg-mtk-blue'>
+        <div className="overflow-x-scroll">
+          <div className="flex">
+            {games.map((game, index) => (
+              <div key={index} className="p-4">
+                <h4 className="text-lg">{game.opponent}</h4>
+                <p className="text-gray-600">{game.date}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* <footer className='h-60 bg-mtk-blue'>
             footer
+        </footer> */}
+        <footer className="bg-gray-800 text-white py-4">
+          <div className="container mx-auto">
+            <div className="flex flex-wrap items-center">
+              <div className="w-full md:w-1/2 text-center md:text-left">
+                <p className="text-sm">Copyright © {new Date().getFullYear()} Motorik FC Alexandria</p>
+              </div>
+              <div className="w-full md:w-1/2 text-center md:text-right">
+                <p className="text-sm">Powered by <a href="https://lower-league-soccer-usa.fandom.com" className="text-white hover:text-green-500">Lower League Soccer USA</a></p>
+              </div>
+            </div>
+          </div>
         </footer>
         
     </div>

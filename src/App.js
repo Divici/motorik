@@ -7,7 +7,6 @@ import Tryouts from "./components/Tryouts";
 const App = () => {
   return (
     <div>
-      <Navbar/>
       <Routes>
 
         <Route path='/*' element={<Home />} />
