@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import {FaTwitterSquare, FaInstagramSquare} from 'react-icons/fa'
 import player from '../assets/motorik-player.png'
 import team from '../assets/motorik-team.png'
 
@@ -12,6 +13,10 @@ const Home = () => {
             <h1 className='z-10 text-white uppercase text-4xl sm:text-7xl md:text-9xl ml:text-9xl absolute bottom-28 md:bottom-16 left-4 sm:left-8 font-bold'>
                 Motorik
             </h1>
+            <div className='flex flex-row md:flex-col justify-evenly absolute ml-2 md:ml-0 mt-4 md:mt-0 md:right-4 md:bottom-1/2'>
+              <a className='text-red-600' href='https://twitter.com/MotorikFC' target='_blank' rel="noreferrer"><FaTwitterSquare size='3rem'/></a>
+              <a href='https://www.instagram.com/motorikfcalx/' target='_blank' rel="noreferrer"><FaInstagramSquare size='3rem'/></a>
+            </div>
         </header>
 
         <div className='w-4/5 mx-auto md:w-full h-[30rem] my-20 sm:my-24 flex justify-center md:justify-around flex-col-reverse md:flex-row'>
