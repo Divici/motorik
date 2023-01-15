@@ -1,27 +1,21 @@
 import React from 'react'
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import {FaTwitterSquare, FaInstagramSquare} from 'react-icons/fa'
+import {FaTwitterSquare, FaInstagramSquare, FaHome} from 'react-icons/fa'
 import player from '../assets/motorik-player.png'
 import team from '../assets/motorik-team.png'
 
 const Home = () => {
   const games = [
     {
-      opponent : "Bad Guys",
+      home : "Motorik",
+      away : "Bad Guys",
       date : "01/20/2023"
     },
     {
-      opponent : "Other Guys",
+      home : "Other Guys",
+      away : "Motorik",
       date : "02/20/2023"
-    },
-    {
-      opponent : "Bad People",
-      date : "03/20/2023"
-    },
-    {
-      opponent : "Revengers",
-      date : "04/20/2023"
     },
   ]
 
@@ -54,20 +48,20 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="overflow-x-scroll">
-          <div className="flex">
+        <div className="py-10 team-bg bg-no-repeat bg-cover">
+          <h2 className='text-white text-5xl py-4 text-center uppercase font-extrabold'>Upcoming Matches</h2>
+          <div className="flex justify-around items-center flex-col md:flex-row w-full md:w-2/3">
             {games.map((game, index) => (
-              <div key={index} className="p-4">
-                <h4 className="text-lg">{game.opponent}</h4>
-                <p className="text-gray-600">{game.date}</p>
+              <div key={index} className="bg-mtk-blue/75 text-center text-white rounded-lg py-8 px-4 w-60 m-4">
+                <p className='my-4'>Match {index+1}</p>
+                <h3 className='font-bold text-xl my-2'>{game.date}</h3>
+                <p className='flex items-center justify-between mt-4 mb-2'><FaHome className='ml-1' size='1rem'/>{game.home}</p>
+                <p className='flex items-center justify-between my-2'><div className='w-4 ml-1'></div>{game.away}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* <footer className='h-60 bg-mtk-blue'>
-            footer
-        </footer> */}
         <footer className="bg-gray-800 text-white py-4">
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center">
