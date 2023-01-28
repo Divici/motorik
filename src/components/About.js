@@ -16,7 +16,7 @@ const About = () => {
         <h1 className="text-2xl font-medium mb-6">About Our Team</h1>
         <div className="w-full md:w-3/4 text-center font-medium">
           <p className="mb-4 px-8">
-            Motorik FC Alexandria was founded in 2020 and is based in Fairfax County in Northern Virginia. The team competes in the UPSL and Division 2 APL leagues.
+            Motorik FC Alexandria was founded in 2017 and is based in Fairfax County in Northern Virginia. The team competes in the UPSL and Division 2 APL leagues.
             Our team is a dedicated group of soccer players who strive for success on and off the field. We work hard to improve our skills and strive to be the best we can be.
           </p>
           <p className="mb-4 px-8">

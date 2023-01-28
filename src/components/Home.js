@@ -41,7 +41,7 @@ const Home = () => {
 
           <div className='w-full md:w-[40%]'>
             <h3 className='capitalize text-gray-700 text-3xl sm:text-4xl ml:text-5xl lg:text-6xl font-bold'>Semi Pro soccer club based in North Virginia</h3>
-            <p className='font-semibold my-4'>Looking to join a team!</p>
+            <p className='font-semibold my-4'>Become a part of the team!</p>
             <Link to="/tryouts" className="py-2 px-4 bg-red-700 text-white font-bold rounded-sm cursor-pointer hover:bg-gray-800">
               Learn More
             </Link>
@@ -63,13 +63,13 @@ const Home = () => {
         </div>
 
         <footer className="bg-gray-800 text-white py-4">
-          <div className="container mx-auto">
-            <div className="flex flex-wrap items-center">
+          <div className="container px-4">
+            <div className="flex flex-wrap items-center justify-around">
               <div className="w-full md:w-1/2 text-center md:text-left">
                 <p className="text-sm">Copyright © {new Date().getFullYear()} Motorik FC Alexandria</p>
               </div>
               <div className="w-full md:w-1/2 text-center md:text-right">
-                <p className="text-sm">Powered by <a href="https://lower-league-soccer-usa.fandom.com" className="text-white hover:text-green-500">Lower League Soccer USA</a></p>
+                <p className="text-sm">Sponsored by Olive & York</p>
               </div>
             </div>
           </div>

@@ -37,26 +37,34 @@ const Navbar = () => {
                                 </button>
                                 <ul className={`absolute ${toggleDrop ? "" : "hidden"} w-48 pt-2 bg-gray-900 rounded-md`}>
                                     <li>
+                                        <Link to="/tryouts" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
+                                        Tryouts
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/teams/upsl" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
+                                        UPSL Team
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link to="/teams/u23" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
                                         U23 Team
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/teams/women" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
-                                        Women's Team
+                                        Women's Coming Soon
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/tryouts" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
-                                        Tryout Info
+                                        <Link to="/staff" className="block px-4 py-2 text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800">
+                                        Join the Staff
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
-
-                            <Link to="/shop" className="text-white font-semibold py-3 px-4 hover:bg-gray-800 rounded-md">
-                                Shop
-                            </Link>
+                            
+                            <a className='text-white font-semibold py-3 px-4 hover:bg-gray-800 rounded-md' href='https://motorik-fc-alexandria.square.site/' target='_blank' rel="noreferrer">Shop</a>
                             <Link to="/contact" className="text-white font-semibold py-3 px-4 hover:bg-gray-800 rounded-md">
                                 Contact
                             </Link>
@@ -92,9 +100,11 @@ const Navbar = () => {
                                         <li className='text-center text-[1.5rem] sm:text-[2rem] w-full mt-8 py-4 text-black hover:text-red-500 cursor-pointer bg-slate-300' onClick={() => setToggleTeams(!toggleTeams)}>
                                             Teams
                                         </li>
+                                        <Link to='/tryouts' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>Tryouts</Link>
+                                        <Link to='/teams/uspl' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>USPL Team</Link>
                                         <Link to='/teams/u23' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>U23 Team</Link>
-                                        <Link to='/teams/women' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>Women's Team</Link>
-                                        <Link to='/tryouts' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>Tryout Info</Link>
+                                        <Link to='/teams/women' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>Women's Coming Soon</Link>                                        
+                                        <Link to='/staff' className={`block ${toggleTeams ? "" : "hidden"} text-center text-[1.5rem] sm:text-[2rem] m-8 hover:text-red-500`} onClick={() => setToggleMenu(false)}>Join the Staff</Link>                                        
                                     </ul>
                                 )
                             }
