@@ -63,12 +63,12 @@ const Home = () => {
         </div>
 
         <footer className="bg-gray-800 text-white py-4">
-          <div className="container px-4">
-            <div className="flex flex-wrap items-center justify-around">
-              <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="px-4">
+            <div className="flex flex-wrap justify-around items-center">
+              <div className="text-center w-3/4 md:w-1/3">
                 <p className="text-sm">Copyright © {new Date().getFullYear()} Motorik FC Alexandria</p>
               </div>
-              <div className="w-full md:w-1/2 text-center md:text-right">
+              <div className="text-center w-3/4 md:w-1/3">
                 <p className="text-sm">Sponsored by Olive & York</p>
               </div>
             </div>
