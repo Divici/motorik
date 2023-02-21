@@ -8,11 +8,13 @@ import team from '../assets/motorik-team.png'
 const Home = () => {
   const games = [
     {
+      title : "UPSL Match 1",
       home : "Motorik",
       away : "Bad Guys",
       date : "01/20/2023"
     },
     {
+      title : "APL Match 1",
       home : "Other Guys",
       away : "Motorik",
       date : "02/20/2023"
@@ -53,7 +55,7 @@ const Home = () => {
           <div className="flex justify-around items-center flex-col md:flex-row w-full md:w-2/3">
             {games.map((game, index) => (
               <div key={index} className="bg-mtk-blue/75 text-center text-white rounded-lg py-8 px-4 w-60 m-4">
-                <p className='my-4'>Match {index+1}</p>
+                <p className='my-4'>{game.title}</p>
                 <h3 className='font-bold text-xl my-2'>{game.date}</h3>
                 <p className='flex items-center justify-between mt-4 mb-2'><FaHome className='ml-1' size='1rem'/>{game.home}</p>
                 <p className='flex items-center justify-between my-2'><div className='w-4 ml-1'></div>{game.away}</p>
