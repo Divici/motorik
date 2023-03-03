@@ -7,7 +7,7 @@ import identity from '../assets/coach-mindset.PNG'
 const About = () => {
   return (
     <div className=''>
-    <Navbar />
+    <Navbar/>
     <div className='mt-8 flex justify-around flex-wrap '>
       
       <div className='px-6'>
@@ -16,7 +16,7 @@ const About = () => {
         <div className=' bg-white'>
           <div className='flex justify-center flex-wrap'>
             <div className='p-4 m-4 text-center sm:w-[450px] md:w-[500px] ml:w-half lg:w-half w-[300px]'>
-              <img src={team} className="w-full" alt="Team Photo" />
+              <img src={team} className="w-full" alt="Team" />
             </div>
             <div className='p-4 m-4 text-center sm:w-[450px] md:w-[500px] ml:w-half lg:w-half w-[300px]'>
               <h3 className='capitalize text-gray-700 text-2xl sm:text-3xl ml:text-4xl lg:text-4xl font-bold'>The Beginning</h3>
@@ -43,16 +43,17 @@ const About = () => {
               </p>
             </div>
             <div className='p-4 m-4 text-center sm:w-[450px] md:w-[500px] ml:w-half lg:w-half w-[300px]'>
-              <img src={team2} className="w-full" alt="Team Photo 2" />
+              <img src={team2} className="w-full" alt="Team2" />
             </div>
           </div>
         </div>
+        
         <div className='bg-sky-100'> 
           <div className='flex justify-center flex-wrap'>
             <div className='p-4 m-4 text-center sm:w-[450px] md:w-[500px] ml:w-half lg:w-half w-[300px]'>
-              <img src={identity} className="w-full" alt="identity photo" />
+              <img src={identity} className="w-full" alt="identity" />
             </div>
-            <div className='mx-auto p-4 text-center w-full md:w-[50%]'>
+            <div className='p-4 m-4 text-center sm:w-[450px] md:w-[500px] ml:w-half lg:w-half w-[300px]'>
               <h3 className='capitalize text-gray-700 text-2xl sm:text-3xl ml:text-4xl lg:text-4xl font-bold'>Our Vision & Identity</h3>
               <p className='font-semibold my-6'>
                 We now field a semi-pro men's team in the UPSL, a reserve team in the APL Division 2, and are in the works of bringing our club mentality, philosophy, and culture to the Youth Level and to the women's game.

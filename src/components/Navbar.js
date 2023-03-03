@@ -10,14 +10,14 @@ const Navbar = () => {
     const [toggleTeams, setToggleTeams] = useState(false);
 
     return (
-        <header className="bg-gray-900 py-4 lg:py-6 sticky z-50">
+        <header className="bg-gray-900 py-4 lg:py-3 sticky z-50">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex items-center justify-between">
 
                     <div className="flex items-center">
                         <Link className='flex items-center' to="/">
                             <img src={logo} alt="logo" className="h-10 lg:h-16" />
-                            <p className='text-white px-2'>Motorik FC</p>
+                            <p className='text-white px-2'>Motorik FC Alexandria</p>
                         </Link>
                     </div>
 
