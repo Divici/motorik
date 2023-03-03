@@ -13,10 +13,10 @@ const Tryouts = () => {
       </div>
       <div className="text-center mx-8 md:mx-12">
         <p className="text-base md:text-lg font-semibold my-4">
-          Motorik FC is looking for new players to join the team for the upcoming season. 
+          Motorik FC is always looking for new players to join the team. 
         </p>
         <p className="text-base md:text-lg font-semibold my-4">
-          We encourage all interested players to contact us at the information below, and to come prepared with soccer gear and a positive attitude.
+          If you are interested in trying out for any of our teams, contact us at the information below.
         </p>
       </div>
       <div className="pt-8 pb-16">

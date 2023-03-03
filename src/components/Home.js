@@ -3,21 +3,21 @@ import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import {FaTwitterSquare, FaInstagramSquare, FaHome} from 'react-icons/fa'
 import player from '../assets/motorik-player.png'
-import team from '../assets/motorik-team.png'
+import team from '../assets/team-huddle-cut.jpg'
 
 const Home = () => {
   const games = [
     {
       title : "UPSL Match 1",
-      home : "Motorik",
-      away : "Bad Guys",
-      date : "01/20/2023"
+      home : "Villarreal CF VA",
+      away : "Motorik FC",
+      date : "04/01/2023"
     },
     {
       title : "APL Match 1",
-      home : "Other Guys",
-      away : "Motorik",
-      date : "02/20/2023"
+      home : "Motorik FC",
+      away : "TBD",
+      date : "03/19/2023"
     },
   ]
 
@@ -41,11 +41,15 @@ const Home = () => {
             <img className="h-auto" src={team} alt='team' />
           </div>
 
-          <div className='w-full md:w-[40%]'>
-            <h3 className='capitalize text-gray-700 text-3xl sm:text-4xl ml:text-5xl lg:text-6xl font-bold'>Semi Pro soccer club based in North Virginia</h3>
-            <p className='font-semibold my-4'>Become a part of the team!</p>
-            <Link to="/tryouts" className="py-2 px-4 bg-red-700 text-white font-bold rounded-sm cursor-pointer hover:bg-gray-800">
+          <div className='w-full md:w-[20%]'>
+            <h3 className='capitalize text-gray-700 text-3xl sm:text-4xl ml:text-5xl lg:text-5xl font-bold'>Semi Pro soccer club based in North Virginia</h3>
+            <p className='font-semibold my-4'> Soccer is more than just a game. For some of us it's our life, our love, and our escape. it's an opportunity at a better life. It's a way for us to develop as men and women and become better people, to connect with our community, and to build a family.  </p>
+            <p className='font-semibold my-4'> That's what makes the foundation of Motorik FC. We hope to build a culture, community, and family that everyone can feel proud to be a part of and make elite level soccer more accessible within the DMV area. Come support and be part of something great!  </p>
+            <Link to="/about" className="py-2 px-4 bg-red-700 text-white font-bold rounded-sm cursor-pointer hover:bg-gray-800">
               Learn More
+            </Link>
+            <Link to="/tryouts" className="py-2 px-4 bg-red-700 text-white font-bold rounded-sm cursor-pointer hover:bg-gray-800">
+              Join a Team
             </Link>
           </div>
         </div>
@@ -71,7 +75,7 @@ const Home = () => {
                 <p className="text-sm">Copyright © {new Date().getFullYear()} Motorik FC Alexandria</p>
               </div>
               <div className="text-center w-3/4 md:w-1/3">
-                <p className="text-sm">Sponsored by Olive & York</p>
+                <p className="text-sm">Sponsored by: Olive & York and Bistro Aracosia</p>
               </div>
             </div>
           </div>

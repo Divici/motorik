@@ -9,7 +9,7 @@ const Women = () => {
         <div className="text-center">
           <h1 className="text-6xl font-bold text-gray-800">Coming Soon</h1>
           <div className="w-[90%] mx-auto h-1 bg-gray-800 my-4"></div>
-          <p className=" w-4/5 mx-auto text-lg text-gray-800">We are working hard to bring you something amazing. Stay tuned!</p>
+          <p className=" w-4/5 mx-auto text-lg text-gray-800">We are working hard to bring our philosophy and culture to the Youth Level. Stay tuned!</p>
         </div>
       </div>
     </div>

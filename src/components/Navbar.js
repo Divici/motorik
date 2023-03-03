@@ -48,12 +48,12 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to="/teams/u23" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
-                                        U23 Team
+                                        Reserve Team
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/teams/women" className="block px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 rounded-md">
-                                        Women's Coming Soon
+                                        Academy (Coming Soon)
                                         </Link>
                                     </li>
                                     <li>
